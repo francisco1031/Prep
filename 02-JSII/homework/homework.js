@@ -3,7 +3,9 @@
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-
+var array = ['fran', 'diez', '29 años', '31 de mayo'];
+console.log(array[array.length-1]);
+// console.log (array[3]); O PONIENDO EL ULTIMO VALOR
 }
 
 function incrementarPorUno(array) {
@@ -11,13 +13,18 @@ function incrementarPorUno(array) {
   // Aumenta cada número por 1 y devuelve el array
   // Tu código:
 
+  var array= [1, 2, 3];
+  for (var i=0; i < array.length; i++){
+  console.log (array[i]);
+  }
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-
+ array.push('salta capital');
+ console.long(array);
 }
 
 function dePalabrasAFrase(palabras) {
@@ -26,14 +33,32 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+ var palabras ={
+   nombre: 'fran',
+   apellido: 'diez',
+   hobbies: ['jugar al futbol', 'padel'],
+ }
+ console.log(palabras.nombre, palabras.apellido, palabras.hobbies[1]);
+ }
 
-}
+//  palabras.nombre
+//  palabras.apellido
+//  palabras.hobbies
+
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-
+  var  arrayContiene = ['fran', 'diez', '29 años', '31 de mayo'];
+  }
+  
+  function palabras(trabajar)
+  if (elemento){
+    return true;
+  } else{
+    return false;
+//   }
 }
 
 function promedioResultadosTest(resultadosTest) {

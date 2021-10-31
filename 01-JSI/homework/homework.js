@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta correcta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = fran;
+const nuevaString = 'Fran';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 10;
@@ -100,9 +100,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0){
-    return 'es positivo'
+    return 'Es positivo'
   } else if (numero <0) {
-    return ' es negativo';
+    return 'Es negativo';
   } else{
     return false;
   }
@@ -127,7 +127,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   // Tu código:
-  euro * 1.2
+  return euro * 1.2
 }
 
 
@@ -137,10 +137,12 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
 if (letra.length > 1) {
-  return 'dato incorrecto';
+  return 'Dato incorrecto';
+}
+if (letra === 'a' || letra === 'e'|| letra === 'i'|| letra === 'o'|| letra === 'u')
+{return 'Es vocal';
 }
 
-if (letra === 'a' )
 }
 
 function obtenerMayor(x, y) {
@@ -183,15 +185,15 @@ function colors(color) {
 
   switch (color) {
     case 'blue':
-      return 'this is blue'; 
+      return 'This is blue'; 
     case 'red':
-      return 'this is red';
+      return 'This is red';
     case 'green':
-        return 'this is green';
+        return 'This is green';
     case 'orange':
-          return 'this is orange';
+          return 'This is orange';
       default:
-        return 'color not found';
+        return 'Color not found';
   }
 
 
@@ -233,7 +235,7 @@ function esPrimo(numero) {
  if (numero === 0 || numero ===1){
   return false;
 } 
-for (let i = 2; i < numero; +++i){
+for (let i = 2; i < numero; ++i){
   if(numero % i === 0){
     return false;
   }  
@@ -248,7 +250,7 @@ function doWhile(numero) {
   // Tu código:
  var i = 0;
   while(i < 8){
-    nuermo = numero + 5;
+    numero = numero + 5;
     i ++;
 }
  return numero;
