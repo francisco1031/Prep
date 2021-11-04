@@ -3,13 +3,15 @@
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   // Tu código:
-
+ return cb (cb);
 }
 
 function operacionMatematica(n1, n2, cb) {
   // Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   // Devolver lo que retorne el ejecutar el callback pasándole como argumentos los números recibidos.
   // Tu código:
+
+  return cb (n1 + n2);
 
 }
 
@@ -18,14 +20,16 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   // Tu código:
-
+  numeros.forEach (function(numero){
+    cb += numero;
+  });
 }
 
 function forEach(array, cb) {
   // Itera sobre el array "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada elemento el arreglo)
   // Tu código:
-
+  array.forEach (cb);
 }
 
 function map(array, cb) {
